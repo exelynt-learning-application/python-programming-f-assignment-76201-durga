@@ -1,28 +1,43 @@
 # Student Profile Program
 
-# Store student details using different data types
+# Store student details in variables
 student_name = "Akshay Khedkar"   # String
-student_age = 23                  # Integer
-student_percentage = 85.5         # Float
-is_passed = True                  # Boolean
+age = 23                          # Integer
+course_fee = 50000.00             # Float
+is_enrolled = True                # Boolean
 
-# Display student details
-print("=== Student Profile ===")
-print("Name:", student_name)
-print("Age:", student_age)
-print("Percentage:", student_percentage)
-print("Passed:", is_passed)
+# Print student details
+print("===== Student Profile =====")
+print("Student Name :", student_name)
+print("Age          :", age)
+print("Course Fee   :", course_fee)
+print("Enrolled     :", is_enrolled)
 
-# Type checking using type()
-print("\n=== Data Types ===")
-print("Type of student_name:", type(student_name))
-print("Type of student_age:", type(student_age))
-print("Type of student_percentage:", type(student_percentage))
-print("Type of is_passed:", type(is_passed))
+# Display data types
+print("\n===== Data Types =====")
+print("student_name:", type(student_name))
+print("age         :", type(age))
+print("course_fee  :", type(course_fee))
+print("is_enrolled :", type(is_enrolled))
 
-# Demonstrate dynamic typing
-student_age = "Twenty Three"
+# Update variables dynamically
+age = age + 1                  # Increment age
+is_enrolled = False            # Change enrollment status
 
-print("\n=== Dynamic Typing ===")
-print("Updated student_age:", student_age)
-print("Type of updated student_age:", type(student_age))
+# Add 10% tax to course fee
+tax = course_fee * 0.10
+course_fee = course_fee + tax
+
+# Print updated values
+print("\n===== Updated Student Profile =====")
+print("Student Name :", student_name)
+print("Age          :", age)
+print("Course Fee   :", course_fee)
+print("Enrolled     :", is_enrolled)
+
+# Display updated data types
+print("\n===== Updated Data Types =====")
+print("student_name:", type(student_name))
+print("age         :", type(age))
+print("course_fee  :", type(course_fee))
+print("is_enrolled :", type(is_enrolled))
